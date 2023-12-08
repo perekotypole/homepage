@@ -49,6 +49,23 @@ body {
   margin-bottom: 15px;
 }
 
+.contact_info_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.contact_info_container>div {
+  justify-content: center;
+}
+
+.contact_info_container>:nth-child(2) {
+  align-items: center;
+}
+
+.contact_info_container>:nth-child(3) {
+  align-items: end;
+}
+
 @media screen and (max-width: 576px) {
   .main-info,
   .contact_info_container {
