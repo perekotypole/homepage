@@ -14,7 +14,7 @@
   --decoration-color: #BD4B4B;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --background-color: #181717;
     --shadow-color: #161313;
@@ -22,7 +22,7 @@
     --secondary-text-color: #ece6e6;
     --durability-text-color: #ad92959c;
   }
-} */
+}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
