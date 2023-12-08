@@ -5,16 +5,17 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
-
+:root {
   --primary-text-color: #181820;
   --secondary-text-color: #5c5c62;
   --durability-text-color: #6a737d9c;
   --icon-color: #6a737d;
-  --border-color: #ff9a0045;
-  --text-decoration-color: #ff9a00;
+  --decoration-color: #a30f3b8a;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
 }
 
 .container {
@@ -44,7 +45,7 @@ body {
 }
 
 .resume__block {
-  border-bottom: 3px solid var(--border-color);
+  border-bottom: 3px solid var(--decoration-color);
   padding-bottom: 30px;
   margin-bottom: 15px;
 }
@@ -52,6 +53,7 @@ body {
 .contact_info_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
 }
 
 .contact_info_container>div {
@@ -94,7 +96,7 @@ body {
 .contact-info__header {
   color: var(--primary-text-color);
   margin-bottom: 15px;
-  text-decoration-color: var(--text-decoration-color);
+  text-decoration-color: var(--decoration-color);
   text-decoration-line: underline;
 }
 
@@ -146,7 +148,7 @@ body {
   height: 100px;
   object-fit: cover;
   border: 3px solid;
-  border-color: var(--text-decoration-color);
+  border-color: var(--decoration-color);
 }
 
 /* Intro and skills styles */
@@ -168,7 +170,7 @@ body {
 }
 
 .intro__icon path {
-  fill: var(--text-decoration-color);
+  fill: var(--decoration-color);
 }
 
 .intro_text {
@@ -208,7 +210,7 @@ body {
 
 .experiences__company-header-name {
   color: var(--primary-text-color);
-  text-decoration-color: var(--text-decoration-color);
+  text-decoration-color: var(--decoration-color);
   text-decoration-line: underline;
   text-align: left;
   margin-bottom: 20px;
