@@ -33,6 +33,13 @@ body {
 main {
   margin: 0 auto;
   width: fit-content;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+main.is-flipped {
+  transform: rotateY(180deg);
 }
 
 .container {
@@ -43,12 +50,30 @@ main {
 
 .resume {
   margin: 50px 10px;
+  background-color: var(--background-color);
   border: 1px solid var(--shadow-color);
   box-shadow: 1px 1px 7px 7px var(--shadow-color);
   padding: 30px 0;
   max-width: 900px;
   border-radius: 20px;
   color: var(--secondary-text-color);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.resume-back {
+  position: absolute;
+  width: calc(100% - 20px); height: 100%;
+  left: 50%; top: -50px;
+  transform: translateX(calc(-50% - 10px)) rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#paw {
+  cursor: pointer;
 }
 
 .resume__block {
@@ -210,8 +235,6 @@ svg.resume__icon {
 .skills__text {
   text-align: justify;
 }
-
-/* Intro and skills styles */
 
 .experiences__company-responsibilities {
   padding-left: 1.5em;
