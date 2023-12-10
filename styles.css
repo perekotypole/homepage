@@ -66,9 +66,15 @@ main.is-flipped {
   left: 50%; top: -50px;
   transform: translateX(calc(-50% - 10px)) rotateY(180deg);
   display: flex;
-  align-items: center;
   justify-content: center;
   cursor: pointer;
+  overflow: hidden;
+}
+
+.resume-back img {
+  width: 90%; max-width: 600px;
+  height: fit-content;
+  top: 50px;
 }
 
 #paw {
